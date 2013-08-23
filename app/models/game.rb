@@ -1,6 +1,4 @@
 class Game
-  include ActiveModel::Model
-
   TTT = /(?:x{3}|o{3})|
          (?:([xo])|_)(?:([xo])|_)(?:([xo])|_)\n
          (?:
