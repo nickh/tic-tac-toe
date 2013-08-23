@@ -1,0 +1,8 @@
+<% if @winner -%>
+	$("#winner").html("<%= @winner.capitalize %>! <a href='/games/new'>Play Again</a>");
+	$("select[id^='grid']").each(function() {
+	  $(this).prop('disabled', true);
+	});
+<% else %>
+  $("#winner").html("<%= pluralize(@turns_left, 'turn') %> left");
+<% end -%>
