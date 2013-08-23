@@ -7,7 +7,9 @@ select { font-size: 100px;
          background:transparent;
          -webkit-appearance: none;
          padding-left: 31px;
-         width: 130px; }
+         overflow-x:visible;
+         width: 130px;
+         height: 130px; }
 table { border-collapse: collapse; margin-left:auto; margin-right:auto;}
 .border-right { border-right: 1px black solid }
 .border-bottom { border-bottom: 1px black solid }
