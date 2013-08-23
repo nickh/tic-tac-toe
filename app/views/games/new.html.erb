@@ -6,7 +6,7 @@
         <tr>
       <% end %>
       <td class="<%= 'border-right' unless (last_column = ((i + 1) % 3).zero?) %>  <%= 'border-bottom' unless i/3 >= 2 %>">
-       <%= select_tag "grid_#{i}", options_for_select(player_options), :onchange => "$('#ttt_form').submit();this.disabled=true;$('input#grid_#{i}').val(this.value); $('input#grid_#{i}').prop('disabled', false); ".html_safe %>
+       <%= select_tag "grid_#{i}", options_for_select(player_options) %>
        <%= hidden_field_tag "grid_#{i}", nil, :disabled => true, :id => "grid_#{i}" %>
       </td>
       <% if last_column %>
