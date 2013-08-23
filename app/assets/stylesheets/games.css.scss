@@ -1,7 +1,13 @@
 // Place all the styles related to the games controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-select { font-size: 100px; border-color:#fff;}
+select { font-size: 100px; 
+         border: 0;
+         border-radius: 0;
+         background:transparent;
+         -webkit-appearance: none;
+         padding-left: 31px;
+         width: 130px; }
 table { border-collapse: collapse; margin-left:auto; margin-right:auto;}
 .border-right { border-right: 1px black solid }
 .border-bottom { border-bottom: 1px black solid }
