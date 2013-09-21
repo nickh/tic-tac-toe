@@ -6,8 +6,8 @@
         <tr>
       <% end %>
       <td class="<%= 'border-right' unless (last_column = ((i + 1) % 3).zero?) %>  <%= 'border-bottom' unless i/3 >= 2 %>">
-       <%= select_tag "grid_#{i}", options_for_select(player_options) %>
-       <%= hidden_field_tag "grid_#{i}", nil, :disabled => true, :id => "grid_#{i}" %>
+        <div id="grid_<%= i %>" class="square"></div>
+        <%= hidden_field_tag "grid_#{i}", p, :id => "grid_#{i}" %>
       </td>
       <% if last_column %>
         </tr>

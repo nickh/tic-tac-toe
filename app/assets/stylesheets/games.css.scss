@@ -1,31 +1,10 @@
 // Place all the styles related to the games controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-select { font-size: 100px; 
-         border: 0;
-         border-radius: 0;
-         background:transparent;
-         padding-left: 31px;
-         -webkit-appearance: none;
-         -moz-appearance: none;
-         appearance: none;
+.square { font-size: 100px;
+         text-align: center;
          width: 130px;
          height: 130px; }
-@media only screen and (max-device-width: 480px) {
-  select { padding-left: none; width: auto; height: auto; }
-} 
-@media handheld {
-  select { padding-left: none; width: auto; height: auto; }
-}
-@media only screen and (device-width: 768px) {
-  select { padding-left: none; width: auto; height: auto; }
-}
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-  select { padding-left: none; width: auto; height: auto; }
-}
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-  select { padding-left: none; width: auto; height: auto; }
-}
 table { border-collapse: collapse; margin-left:auto; margin-right:auto;}
 .border-right { border-right: 1px black solid }
 .border-bottom { border-bottom: 1px black solid }

@@ -23,10 +23,6 @@ class Game
     @board.count('_')
   end
 
-  def valid_board?
-    (@board.count('x') - @board.count('o')).abs <= 1
-  end
-
   def turn
     (matches = board_string.match(TTT)) ? "#{((matches_only = matches.to_a.compact).size == 1) ? matches[0][0] : matches_only.last} wins" : "draw"
   end
