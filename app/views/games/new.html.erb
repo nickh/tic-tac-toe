@@ -7,7 +7,7 @@
       <% end %>
       <td class="<%= 'border-right' unless (last_column = ((i + 1) % 3).zero?) %>  <%= 'border-bottom' unless i/3 >= 2 %>">
         <div id="grid_<%= i %>" class="square"></div>
-        <%= hidden_field_tag "grid_#{i}", p, :id => "grid_#{i}" %>
+        <%= hidden_field_tag "grid_#{i}", p %>
       </td>
       <% if last_column %>
         </tr>

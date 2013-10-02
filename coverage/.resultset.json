@@ -1,0 +1,81 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/judith/workspace/tic-tac-toe/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/judith/workspace/tic-tac-toe/app/helpers/games_helper.rb": [
+        1,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/judith/workspace/tic-tac-toe/app/controllers/games_controller.rb": [
+        1,
+        null,
+        1,
+        7,
+        null,
+        null,
+        1,
+        299,
+        23,
+        20,
+        null,
+        3,
+        3,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/judith/workspace/tic-tac-toe/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/judith/workspace/tic-tac-toe/app/models/game.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        30,
+        null,
+        null,
+        1,
+        7,
+        null,
+        null,
+        1,
+        21,
+        null,
+        null,
+        1,
+        23,
+        null,
+        null,
+        1,
+        null,
+        1,
+        23,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1380671435
+  }
+}

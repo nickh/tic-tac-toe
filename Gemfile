@@ -25,10 +25,19 @@ gem 'jquery-rails'
 # gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+#gem 'jbuilder', '~> 1.2'
 
 # For heroku asset pipeline precompile
 gem 'rails_12factor', group: :production
+
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'simplecov'
+  gem 'poltergeist'
+  gem 'pry'
+  gem 'guard-rspec'
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
