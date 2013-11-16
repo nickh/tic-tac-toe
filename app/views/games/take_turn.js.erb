@@ -1,8 +1,8 @@
 <% if @winner -%>
 	$("#winner").html('<%= @winner.capitalize %>! <%= link_to "Play Again", games_new_path %>');
 	$("div[id^='grid']").each(function() {
-	  if ($(this).html() == '') {
-	    $(this).html('&nbsp;');
+	  if ($(this).hasClass("available")) {
+	    $(this).removeClass("available");
 	  }
 	});
 <% else %>

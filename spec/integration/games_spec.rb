@@ -45,7 +45,7 @@ feature 'View the new game page', js: true do
     message_is_blank
     (0..8).each do |i|
       expect(page).to have_css "input[name=grid_#{i}]", value: '_'
-      expect(page).to have_css "div.square#grid_#{i}", text: ''
+      expect(page).to have_css "div.square.available#grid_#{i}", text: ''
     end
   end
 
@@ -87,7 +87,8 @@ feature 'View the new game page', js: true do
 
   def rest_of_squares_blanked(turns)
     ((0..8).to_a - turns).each do |i|
-      expect(page).to have_css "div.square#grid_#{i}", text: ' '
+      expect(page).to have_css "div.square#grid_#{i}", text: ''
+      expect(page).to_not have_css "div.available#grid_#{i}"
       expect(page).to have_css "input[name=grid_#{i}]", value: '_'
     end
   end
