@@ -1,4 +1,4 @@
 tic-tac-toe
 ===========
 
-tic-tac-toe
+Tic-tac-toe
